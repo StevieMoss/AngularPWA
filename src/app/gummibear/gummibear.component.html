@@ -1,0 +1,84 @@
+<mat-card>
+  <mat-card-title>
+    Gummi Bear Information
+  </mat-card-title>
+  <mat-form-field>
+    <input matInput placeholder="Gummibear Name" name="name" [(ngModel)]="gummibear.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Gummi Type" name="type" [(ngModel)]="gummibear.type">
+      <mat-option *ngFor="let type of types" [value]="type">
+        {{ type }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    Company Information
+  </mat-card-title>
+  <mat-form-field>
+    <input matInput placeholder="Manufacturer" name="company" [(ngModel)]="gummibear.company">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Address" name="address" [(ngModel)]="gummibear.location.address">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="City" name="city" [(ngModel)]="gummibear.location.city">
+  </mat-form-field>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    Ratings
+  </mat-card-title>
+
+  <mat-card-subtitle>Overall Rating</mat-card-subtitle>
+  <mat-slider max="5" thumbLabel name="rating" [(ngModel)]="gummibear.rating" tickInterval="1"></mat-slider>
+
+  <mat-card-subtitle>
+    <mat-slide-toggle #tastingSelector [checked]="tastingEnabled"
+      (change)="tastingRatingChanged(tastingSelector.checked)">Tasting Rating</mat-slide-toggle>
+  </mat-card-subtitle>
+
+  <section id="tasting" *ngIf="tastingSelector.checked">
+    <label>Sourness</label>
+    <mat-slider max="5" thumbLabel name="sournessRating" [(ngModel)]="gummibear.tastingRating.sourness"
+      tickInterval="1"></mat-slider>
+
+    <label>Flavour</label>
+    <mat-slider max="5" thumbLabel name="flavourRating" [(ngModel)]="gummibear.tastingRating.Flavour" tickInterval="1">
+    </mat-slider>
+
+    <label>Sweetness</label>
+    <mat-slider max="5" thumbLabel name="sweetnessRating" [(ngModel)]="gummibear.tastingRating.sweetness"
+      tickInterval="1"></mat-slider>
+
+    <label>Texture</label>
+    <mat-slider max="5" thumbLabel name="textureRating" [(ngModel)]="gummibear.tastingRating.texture" tickInterval="1">
+    </mat-slider>
+
+    <label>Ingredients</label>
+    <mat-slider max="5" thumbLabel name="ingredientsRating" [(ngModel)]="gummibear.tastingRating.ingredients"
+      tickInterval="1"></mat-slider>
+
+  </section>
+
+</mat-card>
+
+<mat-card>
+  <mat-form-field>
+    <textarea matInput placeholder="Notes" name="notes" [(ngModel)]="gummibear.notes">
+      </textarea>
+  </mat-form-field>
+</mat-card>
+
+
+<mat-card>
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="accent" (click)="save()">Save</button>
+</mat-card>

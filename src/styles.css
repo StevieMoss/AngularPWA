@@ -1,0 +1,22 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+
+    background-color: #660707;
+    margin: 0;
+}
+
+mat-form-field{
+
+    width: 100%;
+}
+
+mat-card-title{
+
+    font-size: larger;
+}
+
+mat-slider{
+
+    width: 90%;
+}

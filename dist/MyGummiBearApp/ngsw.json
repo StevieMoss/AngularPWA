@@ -1,0 +1,68 @@
+{
+  "configVersion": 1,
+  "timestamp": 1552336294944,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/es2015-polyfills.4a4cfea0ce682043f4e9.js",
+        "/index.html",
+        "/main.56f8850dc5257460f399.js",
+        "/polyfills.407a467dedb63cfdd103.js",
+        "/runtime.a5dd35324ddfd942bef1.js",
+        "/styles.05109eb40b245affd576.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/gummi144.png",
+        "/assets/gummi192.png",
+        "/assets/gummi512.png",
+        "/assets/gummi96.png",
+        "/assets/gummi_ios_120.png",
+        "/assets/gummi_ios_180.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/gummi144.png": "ed2c04ad60d1df6340fdb270d0e46fc55572a17d",
+    "/assets/gummi192.png": "b4efc0b76e0fbee2b5eef8f32a4d34a0b9257078",
+    "/assets/gummi512.png": "fb7ad3e5c5e349168382f83f0cffa4f9ed028a9c",
+    "/assets/gummi96.png": "e3def2c43f6f4c5172b457a24ad1e0d859d62b2b",
+    "/assets/gummi_ios_120.png": "6f9882bc889e414a84bf3a2fa0fb98427fb924e7",
+    "/assets/gummi_ios_180.png": "d84e8faf2823dd062fd4a0ed75347cb1619b00f3",
+    "/es2015-polyfills.4a4cfea0ce682043f4e9.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
+    "/index.html": "17790dec3057fd4e0b109ef690bfcf05128051b3",
+    "/main.56f8850dc5257460f399.js": "9031e8abcbf34eef151e3c76615ae496cf80ea93",
+    "/polyfills.407a467dedb63cfdd103.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
+    "/runtime.a5dd35324ddfd942bef1.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.05109eb40b245affd576.css": "3e0e8662d5c2b5852647d95cb9a54e577123da2f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
